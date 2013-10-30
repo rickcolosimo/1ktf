@@ -1,0 +1,18 @@
+<h3>Create your profile</h3>
+
+<%= form_for :fan do |f| %>
+<p>
+		<%= f.label :name %><br>
+		<%= f.text_field :name %>
+</p>
+
+<p>
+		<%= f.label :handle %><br>
+		<%= f.text_field :handle %>
+</p>
+	
+	<p>
+		<%= f.submit %>
+	</p>
+
+	<% end %>
