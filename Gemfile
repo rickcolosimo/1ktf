@@ -5,8 +5,6 @@ gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -33,6 +31,22 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+gem 'pry'
+gem 'better_errors'
+gem 'binding_of_caller'
+
+group :development, :test do
+# Use sqlite3 as the development database for Active Record
+	gem 'sqlite3'
+	gem 'dotenv-rails'
+end
+
+group :production do
+	# Use postgres as the production database for Active Record
+	gem 'pg'
+	gem 'rails_12factor'
+	gem 'unicorn'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
