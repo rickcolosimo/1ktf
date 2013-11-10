@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'devise'
+gem 'bootstrap-sass'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
@@ -36,7 +37,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-<<<<<<< HEAD
+
 gem 'pry'
 gem 'better_errors'
 gem 'binding_of_caller'
@@ -53,9 +54,6 @@ group :production do
 	gem 'rails_12factor'
 	gem 'unicorn'
 end
-=======
-gem 'rails_12factor', group: :production
->>>>>>> master
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

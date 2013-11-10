@@ -1,0 +1,11 @@
+<p>Who do you want to auto-retweet?</p>
+
+<%= form_for :fan do |f| %>
+  <%= f.label :handle %><br>
+	<%= f.text_field :handle %>
+		
+	<p>
+		<%= f.submit %>
+	</p>
+
+<% end %>
