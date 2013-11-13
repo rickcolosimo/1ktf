@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'devise'
+gem 'omniauth-twitter'
+gem 'twitter', '5.0.0.rc1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
@@ -36,15 +38,14 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-<<<<<<< HEAD
-gem 'pry'
-gem 'better_errors'
-gem 'binding_of_caller'
+
 
 group :development, :test do
 # Use sqlite3 as the development database for Active Record
 	gem 'sqlite3'
 	gem 'dotenv-rails'
+	gem 'better_errors'
+	gem 'binding_of_caller'
 end
 
 group :production do
@@ -53,9 +54,7 @@ group :production do
 	gem 'rails_12factor'
 	gem 'unicorn'
 end
-=======
-gem 'rails_12factor', group: :production
->>>>>>> master
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
